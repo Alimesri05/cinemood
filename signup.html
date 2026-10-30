@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ثبت‌نام نمایشی در سینمود؛ گالری فیلم برای هر حال‌وهوا.">
+        <meta name="color-scheme" content="light">
+        <title>ثبت‌نام | سینمود</title>
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">پرش به محتوای اصلی</a>
+
+        <!-- Header and mobile menu (CSS-only) -->
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="index.html" aria-label="سینمود، صفحه اصلی">
+                    <img src="assets/logo-light.svg" alt="سینمود" width="176" height="48">
+                </a>
+                <span class="site-header__marker" id="site-menu" aria-hidden="true"></span>
+                <a class="site-header__menu-button site-header__menu-button--open" href="#site-menu">
+                    <span class="site-header__menu-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">باز کردن منوی اصلی</span>
+                </a>
+                <a class="site-header__menu-button site-header__menu-button--close" href="#menu-closed">
+                    <span class="site-header__menu-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">بستن منوی اصلی</span>
+                </a>
+                <div class="site-header__panel">
+                    <nav class="site-header__nav" aria-label="ناوبری اصلی">
+                        <a class="site-header__link" href="index.html">خانه</a>
+                        <a class="site-header__link" href="index.html#moods">حال‌وهوا</a>
+                        <a class="site-header__link" href="index.html#movies">فیلم‌ها</a>
+                        <a class="site-header__link" href="index.html#about">دربارهٔ ما</a>
+                    </nav>
+                    <div class="site-header__actions">
+                        <!-- Theme switch -->
+                        <div class="theme-switch" role="group" aria-label="حالت نمایش">
+                            <a class="theme-switch__option" href="signup.html" aria-current="true">روشن</a>
+                            <a class="theme-switch__option" href="signup-dark.html">تاریک</a>
+                        </div>
+                        <a class="btn btn-outline-light" href="login.html">ورود</a>
+                        <a class="btn btn-gold" href="signup.html" aria-current="page">عضویت</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Sign-up form (demo only, no data is sent) -->
+            <section class="auth-section" aria-labelledby="signup-title">
+                <div class="container auth-section__layout">
+                    <aside class="auth-aside" aria-label="معرفی سینمود">
+                        <a class="site-brand" href="index.html" aria-label="سینمود، صفحه اصلی">
+                            <img src="assets/logo-light.svg" alt="سینمود" width="176" height="48">
+                        </a>
+                        <p class="section-kicker">شروع یک تجربهٔ سینمایی</p>
+                        <h2 class="auth-aside__heading">برای هر احساس، یک داستان تازه.</h2>
+                        <p class="auth-aside__description">در سینمود، فیلم‌ها را فقط بر اساس ژانر نمی‌بینی؛ حال‌وهوایی که دنبالش هستی هم کنار هر فیلم پیداست.</p>
+                        <div class="auth-aside__art" aria-hidden="true"></div>
+                        <p class="auth-aside__note">۲۴ فیلم منتخب · ۵ حال‌وهوای متفاوت</p>
+                    </aside>
+                    <div class="auth-card">
+                        <p class="auth-card__eyebrow">ثبت‌نام / سینمود</p>
+                        <h1 id="signup-title">به جمع سینمود بیا.</h1>
+                        <p class="auth-card__description">چند قدم کوتاه برای دیدن ظاهر صفحهٔ ثبت‌نام.</p>
+                        <form class="auth-form" action="index.html" method="get">
+                            <div class="auth-form__field">
+                                <label class="form-label" for="signup-name">نام و نام خانوادگی</label>
+                                <input class="form-control" id="signup-name" type="text" placeholder="نام خود را بنویس" autocomplete="name" minlength="2" required>
+                            </div>
+                            <div class="auth-form__field">
+                                <label class="form-label" for="signup-email">ایمیل</label>
+                                <input class="form-control" id="signup-email" type="email" placeholder="name@example.com" autocomplete="email" required>
+                            </div>
+                            <div class="auth-form__field">
+                                <label class="form-label" for="signup-password">گذرواژه</label>
+                                <input class="form-control" id="signup-password" type="password" placeholder="حداقل ۸ کاراکتر" autocomplete="new-password" minlength="8" aria-describedby="signup-password-help" required>
+                                <small id="signup-password-help">برای نمایش اعتبارسنجی مرورگر، حداقل ۸ کاراکتر وارد کن.</small>
+                            </div>
+                            <div class="auth-form__field">
+                                <label class="form-label" for="signup-confirm">تکرار گذرواژه</label>
+                                <input class="form-control" id="signup-confirm" type="password" placeholder="تکرار گذرواژه" autocomplete="new-password" minlength="8" required>
+                            </div>
+                            <p class="auth-form__notice">این فرم فقط نمایشی است. اطلاعات ارسال یا ذخیره نمی‌شوند و پس از تأیید اولیهٔ مرورگر، به گالری برمی‌گردی.</p>
+                            <button class="btn btn-gold w-100" type="submit">ثبت‌نام نمایشی</button>
+                        </form>
+                        <p class="auth-card__switch">
+                            از قبل حساب داری؟
+                            <a href="login.html">وارد شو</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-brand" href="index.html" aria-label="سینمود، صفحه اصلی">
+                        <img src="assets/logo-light.svg" alt="سینمود" width="176" height="48">
+                    </a>
+                    <p>برای هر حال، یک قاب ماندگار.</p>
+                </div>
+                <p class="site-footer__closing">هر حال‌وهوایی داری، قصه‌ای منتظرت است.</p>
+            </div>
+            <div class="container site-footer__bottom">
+                <small>© ۱۴۰۵ سینمود · طراحی برای چالش وب ۲ آیولرن</small>
+            </div>
+        </footer>
+    </body>
+</html>

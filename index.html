@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="سینمود؛ گالری گزیده‌ای از ۲۴ فیلم برای پنج حال‌وهوای متفاوت.">
+        <meta name="color-scheme" content="light">
+        <title>سینمود | هر حالی، فیلم خودش را دارد</title>
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+        <!-- Bootstrap 5 RTL (CSS only) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Anchor target for the "Home" link -->
+        <div id="top" aria-hidden="true"></div>
+        <a class="skip-link" href="#main-content">پرش به محتوای اصلی</a>
+
+        <!-- Header and mobile menu (CSS-only) -->
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="index.html" aria-label="سینمود، صفحه اصلی">
+                    <img src="assets/logo-light.svg" alt="سینمود" width="176" height="48">
+                </a>
+                <span class="site-header__marker" id="site-menu" aria-hidden="true"></span>
+                <a class="site-header__menu-button site-header__menu-button--open" href="#site-menu">
+                    <span class="site-header__menu-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">باز کردن منوی اصلی</span>
+                </a>
+                <a class="site-header__menu-button site-header__menu-button--close" href="#menu-closed">
+                    <span class="site-header__menu-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">بستن منوی اصلی</span>
+                </a>
+                <div class="site-header__panel">
+                    <nav class="site-header__nav" aria-label="ناوبری اصلی">
+                        <a class="site-header__link" href="#top" aria-current="page">خانه</a>
+                        <a class="site-header__link" href="#moods">حال‌وهوا</a>
+                        <a class="site-header__link" href="#movies">فیلم‌ها</a>
+                        <a class="site-header__link" href="#about">دربارهٔ ما</a>
+                    </nav>
+                    <div class="site-header__actions">
+                        <!-- Theme switch -->
+                        <div class="theme-switch" role="group" aria-label="حالت نمایش">
+                            <a class="theme-switch__option" href="index.html" aria-current="true">روشن</a>
+                            <a class="theme-switch__option" href="index-dark.html">تاریک</a>
+                        </div>
+                        <a class="btn btn-outline-light" href="login.html">ورود</a>
+                        <a class="btn btn-gold" href="signup.html">عضویت</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Hero -->
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="container hero__layout">
+                    <div class="hero__content">
+                        <p class="section-kicker">سینمود / گالری فیلم</p>
+                        <h1 class="hero__title" id="hero-title">
+                            هر حالی،
+                            <span>فیلم خودش</span>
+                            را دارد.
+                        </h1>
+                        <p class="hero__description">از میان ۲۴ داستان ماندگار، فیلمی پیدا کن که با حال‌وهوای امشبت همراه باشد. اینجا سینما را با احساس شروع می‌کنیم.</p>
+                        <div class="hero__actions">
+                            <a class="btn btn-gold" href="#movies">
+                                دیدن فیلم‌ها
+                                <span aria-hidden="true">↖</span>
+                            </a>
+                            <a class="btn btn-link btn-text" href="#about">آشنایی با سینمود</a>
+                        </div>
+                        <div class="hero__stats" aria-label="ویژگی‌های گالری">
+                            <p>
+                                <strong>۲۴</strong>
+                                <span>فیلم منتخب</span>
+                            </p>
+                            <p>
+                                <strong>۵</strong>
+                                <span>حال‌وهوای متفاوت</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero__visual" aria-hidden="true">
+                        <div class="hero__art">
+                            <div class="hero__art-top">
+                                <span>CINEMOOD</span>
+                            </div>
+                            <div class="hero__art-center">
+                                <span class="hero__ring hero__ring--outer"></span>
+                                <span class="hero__ring hero__ring--inner"></span>
+                                <span class="hero__monogram">C.</span>
+                            </div>
+                            <div class="hero__art-bottom">
+                                <span>FEEL THE FILM</span>
+                                <span>✦</span>
+                            </div>
+                        </div>
+                        <span class="hero__float-label">داستانی برای هر احساس</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mood guide -->
+            <section class="mood-guide" id="moods" aria-labelledby="moods-title">
+                <div class="container mood-guide__inner">
+                    <div class="mood-guide__intro">
+                        <p class="section-kicker">راهنمای حال‌ها</p>
+                        <h2 id="moods-title">امشب چه حالی داری؟</h2>
+                    </div>
+                    <ul class="mood-guide__list" aria-label="پنج حال سینمود">
+                        <li>
+                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                        </li>
+                        <li>
+                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                        </li>
+                        <li>
+                            <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                        </li>
+                        <li>
+                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                        </li>
+                        <li>
+                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Movie gallery -->
+            <section class="movie-section" id="movies" aria-labelledby="movies-title">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-kicker">آرشیو سینمود</p>
+                            <h2 id="movies-title">فیلم‌ها را کشف کن</h2>
+                            <p class="section-heading__description">روی هر کارت بزن تا جزئیات و حال‌وهوای مناسب آن را ببینی.</p>
+                        </div>
+                        <span class="section-heading__count">۲۴ فیلم / ۵ حال</span>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3 g-sm-4 movie-grid">
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="1" data-genres="animation comedy drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-01.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۱ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2015">2015</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، کمدی، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">درون و بیرون</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Inside Out</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.1</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-01">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم درون و بیرون</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="2" data-genres="comedy drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-02.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۲ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2011">2011</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>کمدی، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">دست‌نیافتنی‌ها</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Intouchables</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.5</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-02">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم دست‌نیافتنی‌ها</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="3" data-genres="animation adventure">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-03.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۳ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2009">2009</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، ماجراجویی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">بالا</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Up</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.3</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-03">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم بالا</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="4" data-genres="comedy">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-04.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۴ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2014">2014</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>کمدی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">هتل بزرگ بوداپست</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Grand Budapest Hotel</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.1</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-04">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم هتل بزرگ بوداپست</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="5" data-genres="sci-fi drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-05.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۵ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2014">2014</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>علمی‌تخیلی، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">میان‌ستاره‌ای</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Interstellar</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.7</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-05">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم میان‌ستاره‌ای</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="6" data-genres="sci-fi action">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-06.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۶ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2010">2010</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>علمی‌تخیلی، اکشن</span>
+                                    </div>
+                                    <h3 class="movie-card__title">تلقین</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Inception</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.8</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-06">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم تلقین</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="7" data-genres="drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-07.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۷ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2006">2006</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">در جستجوی خوشبختی</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Pursuit of Happyness</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.0</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-07">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم در جستجوی خوشبختی</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="8" data-genres="animation music">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-08.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۸ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2017">2017</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، موسیقی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">کوکو</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Coco</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.4</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-08">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم کوکو</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="9" data-genres="comedy family">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-09.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۰۹ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2017">2017</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>کمدی، خانوادگی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">پدینگتون ۲</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Paddington 2</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">7.8</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-09">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم پدینگتون ۲</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="10" data-genres="action">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-10.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۰ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2015">2015</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>اکشن</span>
+                                    </div>
+                                    <h3 class="movie-card__title">مکس دیوانه: جاده خشم</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Mad Max: Fury Road</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.1</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-10">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم مکس دیوانه: جاده خشم</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="11" data-genres="drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-11.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۱ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="1994">1994</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">رستگاری در شاوشنک</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Shawshank Redemption</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">9.3</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-11">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم رستگاری در شاوشنک</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="12" data-genres="drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-12.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۲ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2011">2011</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">جدایی نادر از سیمین</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">A Separation</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.3</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-12">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم جدایی نادر از سیمین</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="13" data-genres="drama family">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-13.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۳ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="1997">1997</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>درام، خانوادگی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">بچه‌های آسمان</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Children of Heaven</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.2</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-13">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم بچه‌های آسمان</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="14" data-genres="animation fantasy">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-14.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۴ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2001">2001</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، فانتزی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">شهر اشباح</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Spirited Away</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.6</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-14">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم شهر اشباح</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="15" data-genres="comedy drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-15.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۵ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="1998">1998</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>کمدی، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">نمایش ترومن</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Truman Show</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.2</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-15">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم نمایش ترومن</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="16" data-genres="animation comedy">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-16.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۶ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2016">2016</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، کمدی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">زوتوپیا</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Zootopia</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                            <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.0</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-16">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم زوتوپیا</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="17" data-genres="drama romance">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-17.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۷ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="1994">1994</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>درام، عاشقانه</span>
+                                    </div>
+                                    <h3 class="movie-card__title">فارست گامپ</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Forrest Gump</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.8</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-17">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم فارست گامپ</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="18" data-genres="sci-fi adventure">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-18.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۸ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2015">2015</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>علمی‌تخیلی، ماجراجویی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">مریخی</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Martian</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.0</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-18">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم مریخی</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="19" data-genres="animation comedy">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-19.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۱۹ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2007">2007</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، کمدی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">موش سرآشپز</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Ratatouille</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.1</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-19">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم موش سرآشپز</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="20" data-genres="mystery comedy">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-20.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۲۰ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2019">2019</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>معمایی، کمدی</span>
+                                    </div>
+                                    <h3 class="movie-card__title">چاقوکشی</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Knives Out</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">7.9</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-20">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم چاقوکشی</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="21" data-genres="animation drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-21.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۲۱ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2020">2020</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">روح</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Soul</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.0</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-21">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم روح</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="22" data-genres="action">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-22.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۲۲ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2014">2014</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>اکشن</span>
+                                    </div>
+                                    <h3 class="movie-card__title">جان ویک</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">John Wick</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">7.4</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-22">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم جان ویک</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="23" data-genres="animation drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-23.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۲۳ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="1994">1994</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>انیمیشن، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">شیرشاه</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">The Lion King</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                            <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.5</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-23">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم شیرشاه</span>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="movie-card" data-movie-id="24" data-genres="thriller drama">
+                                <div class="movie-card__poster">
+                                    <img src="assets/posters/movie-24.svg" alt="" width="400" height="600" loading="lazy">
+                                    <span class="movie-card__index" aria-hidden="true">۲۴ / ۲۴</span>
+                                </div>
+                                <div class="movie-card__body">
+                                    <div class="movie-card__meta">
+                                        <time datetime="2019">2019</time>
+                                        <span aria-hidden="true">·</span>
+                                        <span>هیجان‌انگیز، درام</span>
+                                    </div>
+                                    <h3 class="movie-card__title">انگل</h3>
+                                    <p class="movie-card__original" lang="en" dir="ltr">Parasite</p>
+                                    <div class="movie-card__bottom">
+                                        <div class="movie-card__moods">
+                                            <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                        </div>
+                                        <span class="movie-card__rating">
+                                            <span class="visually-hidden">امتیاز </span>
+                                            <span aria-hidden="true">★</span>
+                                            <span dir="ltr">8.5</span>
+                                            <span class="visually-hidden"> از ۱۰</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="movie-card__open" type="button" popovertarget="movie-modal-24">
+                                    <span class="visually-hidden">نمایش جزئیات فیلم انگل</span>
+                                </button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="about-section" id="about" aria-labelledby="about-title">
+                <div class="container about-section__layout">
+                    <div>
+                        <p class="section-kicker">دربارهٔ سینمود</p>
+                        <h2 id="about-title">سینما، به روایت حال تو.</h2>
+                    </div>
+                    <div class="about-section__content">
+                        <p>بعضی شب‌ها یک کمدی خوب لازم است، بعضی شب‌ها یک داستان امیدبخش. سینمود مجموعه‌ای از فیلم‌های منتخب را با برچسب‌های حال کنار هم آورده تا انتخاب امشب ساده‌تر و لذت‌بخش‌تر باشد.</p>
+                        <a class="btn btn-gold" href="#movies">
+                            مرور گالری
+                            <span aria-hidden="true">↖</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Movie detail modals (Popover API) -->
+
+            <div class="movie-modal" id="movie-modal-01" popover="auto" role="dialog" aria-labelledby="movie-modal-01-title" aria-describedby="movie-modal-01-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-01" popovertargetaction="hide" aria-label="بستن جزئیات فیلم درون و بیرون">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-01.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۱ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-01-title">درون و بیرون</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Inside Out</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-01-synopsis">پس از اسباب‌کشی رایلی، شادی و غم در ذهن او راهی سفری می‌شوند که معنای احساسات را عوض می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2015</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، کمدی، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.1 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-02" popover="auto" role="dialog" aria-labelledby="movie-modal-02-title" aria-describedby="movie-modal-02-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-02" popovertargetaction="hide" aria-label="بستن جزئیات فیلم دست‌نیافتنی‌ها">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-02.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۲ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-02-title">دست‌نیافتنی‌ها</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Intouchables</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-02-synopsis">دوستی غیرمنتظرهٔ مردی ثروتمند و مراقب تازه‌اش، زندگی هر دو را با شوخ‌طبعی و صمیمیت دگرگون می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2011</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>کمدی، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.5 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-03" popover="auto" role="dialog" aria-labelledby="movie-modal-03-title" aria-describedby="movie-modal-03-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-03" popovertargetaction="hide" aria-label="بستن جزئیات فیلم بالا">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-03.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۳ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-03-title">بالا</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Up</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-03-synopsis">پیرمردی با خانه‌ای پر از بادکنک به سفری می‌رود که در آن رؤیای دیرینه و دوستی تازه به هم می‌رسند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2009</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، ماجراجویی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.3 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-04" popover="auto" role="dialog" aria-labelledby="movie-modal-04-title" aria-describedby="movie-modal-04-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-04" popovertargetaction="hide" aria-label="بستن جزئیات فیلم هتل بزرگ بوداپست">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-04.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۴ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-04-title">هتل بزرگ بوداپست</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Grand Budapest Hotel</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-04-synopsis">در هتلی مجلل، سرپیشخدمت نامدار و شاگرد جوانش میان میراثی مرموز و تعقیب‌وگریزی پرزرق‌وبرق گرفتار می‌شوند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2014</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>کمدی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.1 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-05" popover="auto" role="dialog" aria-labelledby="movie-modal-05-title" aria-describedby="movie-modal-05-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-05" popovertargetaction="hide" aria-label="بستن جزئیات فیلم میان‌ستاره‌ای">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-05.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۵ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-05-title">میان‌ستاره‌ای</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Interstellar</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-05-synopsis">گروهی فضانورد از زمین رو به زوال دل می‌کنند تا در آن‌سوی کهکشان، امیدی برای آیندهٔ بشر پیدا کنند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2014</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>علمی‌تخیلی، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.7 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-06" popover="auto" role="dialog" aria-labelledby="movie-modal-06-title" aria-describedby="movie-modal-06-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-06" popovertargetaction="hide" aria-label="بستن جزئیات فیلم تلقین">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-06.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۶ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-06-title">تلقین</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Inception</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-06-synopsis">دزدی که به رؤیاهای دیگران نفوذ می‌کند، این‌بار باید به‌جای ربودن فکر، ایده‌ای را در ذهن کسی بکارد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2010</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>علمی‌تخیلی، اکشن</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.8 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-07" popover="auto" role="dialog" aria-labelledby="movie-modal-07-title" aria-describedby="movie-modal-07-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-07" popovertargetaction="hide" aria-label="بستن جزئیات فیلم در جستجوی خوشبختی">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-07.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۷ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-07-title">در جستجوی خوشبختی</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Pursuit of Happyness</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-07-synopsis">پدری در تنگنای مالی، دست پسر کوچکش را رها نمی‌کند و برای فرصتی تازه با تمام توان می‌جنگد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2006</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.0 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-08" popover="auto" role="dialog" aria-labelledby="movie-modal-08-title" aria-describedby="movie-modal-08-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-08" popovertargetaction="hide" aria-label="بستن جزئیات فیلم کوکو">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-08.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۸ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-08-title">کوکو</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Coco</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-08-synopsis">میگل، نوجوان شیفتهٔ موسیقی، به سرزمین مردگان پا می‌گذارد تا راز خانواده و صدای گمشده‌اش را پیدا کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2017</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، موسیقی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.4 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-09" popover="auto" role="dialog" aria-labelledby="movie-modal-09-title" aria-describedby="movie-modal-09-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-09" popovertargetaction="hide" aria-label="بستن جزئیات فیلم پدینگتون ۲">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-09.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۰۹ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-09-title">پدینگتون ۲</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Paddington 2</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-09-synopsis">پدینگتون برای هدیه‌ای خاص پس‌انداز می‌کند، اما یک ماجرای عجیب او و همهٔ اهالی محله را به دردسر می‌اندازد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2017</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>کمدی، خانوادگی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">7.8 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-10" popover="auto" role="dialog" aria-labelledby="movie-modal-10-title" aria-describedby="movie-modal-10-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-10" popovertargetaction="hide" aria-label="بستن جزئیات فیلم مکس دیوانه: جاده خشم">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-10.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۰ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-10-title">مکس دیوانه: جاده خشم</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Mad Max: Fury Road</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-10-synopsis">در بیابانی بی‌رحم، فرار گروهی از اسیران به تعقیب‌وگریزی نفس‌گیر برای آزادی بدل می‌شود.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2015</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>اکشن</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.1 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-11" popover="auto" role="dialog" aria-labelledby="movie-modal-11-title" aria-describedby="movie-modal-11-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-11" popovertargetaction="hide" aria-label="بستن جزئیات فیلم رستگاری در شاوشنک">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-11.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۱ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-11-title">رستگاری در شاوشنک</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Shawshank Redemption</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-11-synopsis">مردی محکوم در زندان شاوشنک، میان سال‌های سخت با دوستی و امید معنای تازه‌ای برای آزادی می‌سازد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">1994</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">9.3 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-12" popover="auto" role="dialog" aria-labelledby="movie-modal-12-title" aria-describedby="movie-modal-12-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-12" popovertargetaction="hide" aria-label="بستن جزئیات فیلم جدایی نادر از سیمین">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-12.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۲ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-12-title">جدایی نادر از سیمین</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">A Separation</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-12-synopsis">تصمیم یک زوج برای جدایی، خانواده و اطرافیانشان را در گره‌ای از حقیقت، مسئولیت و قضاوت گرفتار می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2011</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.3 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-13" popover="auto" role="dialog" aria-labelledby="movie-modal-13-title" aria-describedby="movie-modal-13-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-13" popovertargetaction="hide" aria-label="بستن جزئیات فیلم بچه‌های آسمان">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-13.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۳ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-13-title">بچه‌های آسمان</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Children of Heaven</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-13-synopsis">گم‌شدن یک جفت کفش، خواهر و برادری را به رازی کوچک و تلاشی بزرگ برای کنار آمدن با زندگی می‌کشاند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">1997</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>درام، خانوادگی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.2 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-14" popover="auto" role="dialog" aria-labelledby="movie-modal-14-title" aria-describedby="movie-modal-14-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-14" popovertargetaction="hide" aria-label="بستن جزئیات فیلم شهر اشباح">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-14.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۴ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-14-title">شهر اشباح</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Spirited Away</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-14-synopsis">دختری در جهانی پر از ارواح و موجودات شگفت‌انگیز، برای نجات پدر و مادرش باید شجاعت خود را پیدا کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2001</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، فانتزی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.6 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-15" popover="auto" role="dialog" aria-labelledby="movie-modal-15-title" aria-describedby="movie-modal-15-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-15" popovertargetaction="hide" aria-label="بستن جزئیات فیلم نمایش ترومن">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-15.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۵ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-15-title">نمایش ترومن</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Truman Show</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-15-synopsis">ترومن کم‌کم درمی‌یابد دنیای به‌ظاهر عادی‌اش آن‌قدرها هم واقعی نیست و به دنبال حقیقت می‌گردد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">1998</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>کمدی، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.2 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-16" popover="auto" role="dialog" aria-labelledby="movie-modal-16-title" aria-describedby="movie-modal-16-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-16" popovertargetaction="hide" aria-label="بستن جزئیات فیلم زوتوپیا">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-16.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۶ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-16-title">زوتوپیا</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Zootopia</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-16-synopsis">خرگوش پلیس تازه‌کار و روباهی زیرک، برای حل یک معما در شهری که حیوانات کنار هم زندگی می‌کنند همراه می‌شوند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2016</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، کمدی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.0 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-17" popover="auto" role="dialog" aria-labelledby="movie-modal-17-title" aria-describedby="movie-modal-17-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-17" popovertargetaction="hide" aria-label="بستن جزئیات فیلم فارست گامپ">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-17.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۷ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-17-title">فارست گامپ</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Forrest Gump</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-17-synopsis">فارست با نگاه ساده و قلب بزرگش از دل لحظه‌های مهم تاریخ می‌گذرد و رد دوستی و عشق را دنبال می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">1994</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>درام، عاشقانه</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.8 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-18" popover="auto" role="dialog" aria-labelledby="movie-modal-18-title" aria-describedby="movie-modal-18-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-18" popovertargetaction="hide" aria-label="بستن جزئیات فیلم مریخی">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-18.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۸ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-18-title">مریخی</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Martian</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-18-synopsis">فضانوردی که در مریخ تنها مانده، با علم، خلاقیت و امید برای بازگشت به خانه تلاش می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2015</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>علمی‌تخیلی، ماجراجویی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.0 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-19" popover="auto" role="dialog" aria-labelledby="movie-modal-19-title" aria-describedby="movie-modal-19-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-19" popovertargetaction="hide" aria-label="بستن جزئیات فیلم موش سرآشپز">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-19.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۱۹ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-19-title">موش سرآشپز</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Ratatouille</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-19-synopsis">موشی عاشق آشپزی در پاریس، با کمک دوستی غیرمنتظره می‌کوشد ثابت کند استعداد جای مشخصی نمی‌شناسد.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2007</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، کمدی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.1 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-20" popover="auto" role="dialog" aria-labelledby="movie-modal-20-title" aria-describedby="movie-modal-20-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-20" popovertargetaction="hide" aria-label="بستن جزئیات فیلم چاقوکشی">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-20.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۲۰ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-20-title">چاقوکشی</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Knives Out</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-20-synopsis">مرگ نویسنده‌ای مشهور، کارآگاهی تیزبین را به خانه‌ای پر از راز و خویشاوندانی مشکوک می‌کشاند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2019</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>معمایی، کمدی</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">7.9 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-21" popover="auto" role="dialog" aria-labelledby="movie-modal-21-title" aria-describedby="movie-modal-21-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-21" popovertargetaction="hide" aria-label="بستن جزئیات فیلم روح">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-21.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۲۱ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-21-title">روح</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Soul</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-21-synopsis">معلم موسیقی در آستانهٔ تحقق رؤیایش، سفری غیرمنتظره را آغاز می‌کند و دوباره به معنای زندگی فکر می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2020</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.0 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--neutral" data-mood="neutral">خنثی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-22" popover="auto" role="dialog" aria-labelledby="movie-modal-22-title" aria-describedby="movie-modal-22-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-22" popovertargetaction="hide" aria-label="بستن جزئیات فیلم جان ویک">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-22.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۲۲ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-22-title">جان ویک</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">John Wick</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-22-synopsis">آرامش یک آدمکش بازنشسته به‌هم می‌خورد و او در شهری زیر سایهٔ دنیای تبهکاران به‌دنبال انتقام می‌رود.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2014</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>اکشن</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">7.4 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--angry" data-mood="angry">عصبانی</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-23" popover="auto" role="dialog" aria-labelledby="movie-modal-23-title" aria-describedby="movie-modal-23-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-23" popovertargetaction="hide" aria-label="بستن جزئیات فیلم شیرشاه">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-23.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۲۳ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-23-title">شیرشاه</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">The Lion King</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-23-synopsis">توله‌شیری دور از خانه بزرگ می‌شود و باید میان فرار از گذشته و پذیرفتن جایگاهش یکی را انتخاب کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">1994</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>انیمیشن، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.5 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--sad" data-mood="sad">غمگین</span>
+                                <span class="mood-badge mood-badge--happy" data-mood="happy">شاد</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-modal" id="movie-modal-24" popover="auto" role="dialog" aria-labelledby="movie-modal-24-title" aria-describedby="movie-modal-24-synopsis">
+                <button class="movie-modal__close" type="button" popovertarget="movie-modal-24" popovertargetaction="hide" aria-label="بستن جزئیات فیلم انگل">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="movie-modal__layout">
+                    <div class="movie-modal__poster">
+                        <img src="assets/posters/movie-24.svg" alt="" width="400" height="600" loading="lazy">
+                    </div>
+                    <div class="movie-modal__content">
+                        <p class="movie-modal__eyebrow">گزیدهٔ سینمود · فیلم ۲۴ از ۲۴</p>
+                        <h2 class="movie-modal__title" id="movie-modal-24-title">انگل</h2>
+                        <p class="movie-modal__original" lang="en" dir="ltr">Parasite</p>
+                        <p class="movie-modal__synopsis" id="movie-modal-24-synopsis">ورود تدریجی خانواده‌ای کم‌درآمد به زندگی خانواده‌ای مرفه، فاصلهٔ طبقاتی را به طنزی تلخ و پرتعلیق بدل می‌کند.</p>
+                        <dl class="movie-modal__facts">
+                            <div class="movie-modal__fact">
+                                <dt>سال انتشار</dt>
+                                <dd dir="ltr">2019</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>ژانر</dt>
+                                <dd>هیجان‌انگیز، درام</dd>
+                            </div>
+                            <div class="movie-modal__fact">
+                                <dt>امتیاز</dt>
+                                <dd dir="ltr">8.5 / 10</dd>
+                            </div>
+                        </dl>
+                        <div class="movie-modal__moods">
+                            <p>حال‌های مناسب</p>
+                            <div class="movie-modal__badges">
+                                <span class="mood-badge mood-badge--surprise" data-mood="surprise">متعجب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="site-brand" href="index.html" aria-label="سینمود، صفحه اصلی">
+                        <img src="assets/logo-light.svg" alt="سینمود" width="176" height="48">
+                    </a>
+                    <p>برای هر حال، یک قاب ماندگار.</p>
+                </div>
+                <p class="site-footer__closing">هر حال‌وهوایی داری، قصه‌ای منتظرت است.</p>
+            </div>
+            <div class="container site-footer__bottom">
+                <small>© ۱۴۰۵ سینمود · طراحی برای چالش وب ۲ آیولرن</small>
+            </div>
+        </footer>
+    </body>
+</html>

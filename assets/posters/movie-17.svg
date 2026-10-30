@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+    <defs>
+        <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#777b6e"/>
+            <stop offset="100%" stop-color="#b5ab8c"/>
+        </linearGradient>
+        <radialGradient id="vignette" cx="50%" cy="42%" r="78%">
+            <stop offset="45%" stop-color="#071a25" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#071a25" stop-opacity="0.3"/>
+        </radialGradient>
+        <pattern id="paper-grain" width="17" height="17" patternUnits="userSpaceOnUse">
+            <circle cx="3" cy="4" r="0.8" fill="#fff8eb" fill-opacity="0.26"/>
+            <circle cx="13" cy="12" r="0.55" fill="#fff8eb" fill-opacity="0.18"/>
+        </pattern>
+    </defs>
+    <rect width="400" height="600" fill="url(#background)"/>
+    <path d="M47 281 C93 253 122 275 130 289 M274 316 C321 294 341 317 357 337" fill="none" stroke="#f7e4c4" stroke-opacity="0.52" stroke-width="3" stroke-linecap="round"/>
+    <path d="M75 345 Q132 315 175 345" fill="none" stroke="#f0d6a9" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="333" cy="87" r="102" fill="#f0d6a9" fill-opacity="0.08"/>
+    <circle cx="215" cy="221" r="118" fill="#efd5a8" fill-opacity="0.7"/>
+    <path d="M0 432 Q200 392 400 438 V600 H0 Z" fill="#6d7769"/>
+    <path d="M79 432 H320 M97 458 H303" stroke="#2b4042" stroke-width="12" stroke-linecap="round"/>
+    <path d="M118 459 L106 528 M282 459 L295 528" stroke="#2b4042" stroke-width="11" stroke-linecap="round"/>
+    <path d="M104 430 V384 M296 430 V384" stroke="#2b4042" stroke-width="10" stroke-linecap="round"/>
+    <path d="M152 172 C128 230 168 274 181 321 C188 270 201 235 234 190 C199 207 183 199 152 172 Z" fill="#f4ebdc"/>
+    <path d="M153 173 Q186 239 181 321" fill="none" stroke="#b0aaa0" stroke-width="3"/>
+    <path d="M143 521 Q193 496 257 524" fill="none" stroke="#f0d6a9" stroke-opacity="0.46" stroke-width="4"/>
+    <path d="M154 192 L179 249 M161 208 L174 216 M166 226 L179 234 M175 247 L192 228" stroke="#c4baa9" stroke-opacity="0.77" stroke-width="2" stroke-linecap="round"/>
+    <path d="M84 433 H315 M89 458 H309" stroke="#f4d9aa" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="317" cy="254" r="3" fill="#f6e7cb"/>
+    <circle cx="93" cy="227" r="3" fill="#f6e7cb"/>
+    <rect width="400" height="600" fill="url(#vignette)"/>
+    <rect width="400" height="600" fill="url(#paper-grain)" opacity="0.5"/>
+    <path d="M42 548 H90 M310 548 H358" fill="none" stroke="#F8EEDC" stroke-opacity="0.43" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="194" cy="549" r="2.5" fill="#F8EEDC" fill-opacity="0.62"/>
+    <circle cx="206" cy="549" r="2.5" fill="#F8EEDC" fill-opacity="0.62"/>
+    <rect x="18" y="18" width="364" height="564" rx="13" fill="none" stroke="#F8EEDC" stroke-opacity="0.33" stroke-width="1.5"/>
+    <path d="M42 85 V44 H83 M317 556 H358 V515" fill="none" stroke="#F8EEDC" stroke-opacity="0.52" stroke-width="2" stroke-linecap="round"/>
+</svg>
